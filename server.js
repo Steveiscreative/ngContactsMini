@@ -40,7 +40,7 @@ app.configure(function () {
     app.use(app.router);
 
     //Where to serve static content
-    app.use(express.static(path.join(app_root, 'app')));
+    app.use(express.static(path.join(app_root, 'src')));
 
     //Show all errors in development
     app.use(express.errorHandler({dumpExceptions: true, showStack: true}));
@@ -60,7 +60,7 @@ app.configure(function () {
 app.get('/api/contacts', function (request, response) {
     ContactModel.find(function (err, contacts) {
         if (!err) {
-            return response.send(contacts);
+            return response.send( contacts );
         } else {
             return console.log(err);
         }
