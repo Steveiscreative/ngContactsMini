@@ -1,0 +1,19 @@
+header {
+  border-bottom: 1px #c2ccd1 solid;
+  margin-bottom: 0; }
+
+.app__title {
+  font-size: 20px;
+  padding: 1em;
+  margin-bottom: 0; }
+
+.contacts .contact {
+  padding: 2em;
+  border-bottom: 1px #c2ccd1 solid; }
+.contacts .action-items {
+  padding-top: 1em; }
+
+footer {
+  padding: 0.5em 0; }
+
+/*# sourceMappingURL=app.css.map */

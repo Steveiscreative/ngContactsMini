@@ -1,6 +1,11 @@
 <div ng-controller="HomeController as home">
-    <h1>Home</h1>
-    <ul>
-        <li ng-repeat="contact in home.contacts">{{contact.first_name}} {{contact.last_name}}</li>
-    </ul>
+    <section class="contacts">
+        <div class="contact" ng-repeat="contact in home.contacts">
+            <h3 class="fullname">{{contact.first_name}} {{contact.last_name}}</h3>
+            <tel>{{contact.phone_number}}</tel>
+            <div class="action-items">
+                <a ui-sref="view({id: contact._id})" class="button">view</a> <a class="button" ng-href="#/contacts/{{contact._id}}/edit">edit</a>
+            </div>
+        </div>
+    </section>
 </div>

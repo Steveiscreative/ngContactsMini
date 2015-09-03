@@ -1,0 +1,16 @@
+<div ng-controller="ViewContactController as contact">
+    <h2>
+        {{contact.info.first_name}} {{contact.info.last_name}}
+    </h2>
+    <div class="contactinfo">
+        <h3>Phone</h3>
+        {{contact.info.phone_number}}
+        <h3>Address</h3>
+        <ul class="address">
+            <li class="street">{{contact.info.address_1}}</li>
+            <li class="street2" ng-if="contact.info.address_2 !== 'null'">{{contact.info.address_2}}</li>
+        </ul>
+        <h3>Email</h3>
+        <p>{{contact.info.email}}</p>
+    </div>
+</div>

@@ -8,6 +8,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: "/home",
             templateUrl: "app/home/home.tmpl.html",
             controller: HomeController
+        })
+        .state("view", {
+            url: "/contact/:id",
+            templateUrl: "app/contact/view/view.tmpl.html",
+            controller: ViewContactController
         });
 
 });
