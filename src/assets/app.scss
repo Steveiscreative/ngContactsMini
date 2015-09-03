@@ -2,13 +2,17 @@ header {
   border-bottom: 1px #c2ccd1 solid;
   margin-bottom: 0;
 }
+
 .app__title {
   font-size: 20px;
   padding: 1em;
   margin-bottom: 0;
 }
-
+.form-wrapper {
+  padding-top: 2em;
+}
 .contacts {
+  padding-top: 2em;
   .contact {
     padding: 2em;
     border-bottom: 1px #c2ccd1 solid;
@@ -16,6 +20,10 @@ header {
   .action-items {
     padding-top: 1em;
   }
+}
+
+.contact-profile {
+  padding: 2em;
 }
 
 footer {

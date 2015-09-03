@@ -1,0 +1,26 @@
+<div class="form-wrapper" ng-controller="AddContactController as add">
+    <h2>Add Contact</h2>
+    <form ng-submit="add.addContact(contact)">
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" class="u-full-width" ng-model="contact.first_name"/>
+
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" class="u-full-width" ng-model="contact.last_name"/>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" class="u-full-width" ng-model="contact.email"/>
+
+        <label for="phone">Phone</label>
+        <input type="text" name="phone_number" class="u-full-width" ng-model="contact.phone_number"/>
+
+        <fieldset>
+            <label for="address_1">Address 1</label>
+            <input type="text" name="address_1" class="u-full-width" ng-model="contact.address_1"/>
+
+            <label for="address_2">Address 2</label>
+            <input type="text" name="address_2" class="u-full-width" ng-model="contact.address_2"/>
+        </fieldset>
+
+        <input type="submit" class="button-primary"/>
+    </form>
+</div>

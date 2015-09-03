@@ -7,11 +7,19 @@ header {
   padding: 1em;
   margin-bottom: 0; }
 
-.contacts .contact {
-  padding: 2em;
-  border-bottom: 1px #c2ccd1 solid; }
-.contacts .action-items {
-  padding-top: 1em; }
+.form-wrapper {
+  padding-top: 2em; }
+
+.contacts {
+  padding-top: 2em; }
+  .contacts .contact {
+    padding: 2em;
+    border-bottom: 1px #c2ccd1 solid; }
+  .contacts .action-items {
+    padding-top: 1em; }
+
+.contact-profile {
+  padding: 2em; }
 
 footer {
   padding: 0.5em 0; }

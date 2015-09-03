@@ -1,0 +1,33 @@
+<div class="form-wrapper" ng-controller="EditContactController as contact">
+    <h2>Edit Contact</h2>
+
+    <form ng-submit="contact.update(data)">
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" class="u-full-width" ng-value="contact.info.first_name"
+               ng-model="data.first_name"/>
+
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" class="u-full-width" ng-value="contact.info.last_name"
+               ng-model="data.last_name"/>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" class="u-full-width" ng-value="contact.info.email" ng-model="data.email"/>
+
+        <label for="phone">Phone</label>
+        <input type="text" name="phone_number" class="u-full-width" ng-value="contact.info.phone_number"
+               ng-model="data.phone_number"/>
+
+        <fieldset>
+            <label for="address_1">Address 1</label>
+            <input type="text" name="address_1" class="u-full-width" ng-value="contact.info.address_1"
+                   ng-model="data.address_1"/>
+
+            <label for="address_2">Address 2</label>
+            <input type="text" name="address_2" class="u-full-width" ng-value="contact.info.address_2"
+                   ng-model="data.address_2"/>
+        </fieldset>
+
+        <input type="submit" class="button-primary"/>
+        <a ng-click="contact.delete()" class="button">Delete</a>
+    </form>
+</div>

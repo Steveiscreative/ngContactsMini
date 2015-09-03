@@ -1,16 +1,17 @@
-<div ng-controller="ViewContactController as contact">
+<div ng-controller="ViewContactController as contact" class="contact-profile">
     <h2>
         {{contact.info.first_name}} {{contact.info.last_name}}
     </h2>
     <div class="contactinfo">
-        <h3>Phone</h3>
+        <h5>Phone</h5>
         {{contact.info.phone_number}}
-        <h3>Address</h3>
+        <h5>Address</h5>
         <ul class="address">
             <li class="street">{{contact.info.address_1}}</li>
             <li class="street2" ng-if="contact.info.address_2 !== 'null'">{{contact.info.address_2}}</li>
         </ul>
-        <h3>Email</h3>
+        <h5>Email</h5>
         <p>{{contact.info.email}}</p>
     </div>
+    <a class="button" ui-sref="edit({id: contact.info._id})">edit</a>
 </div>
